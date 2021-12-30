@@ -30,7 +30,7 @@ public final class App {
 
     private int[] logIndex;
 
-    private App(String address, int port) throws IOException {
+    public App(String address, int port) throws IOException {
         game = new Game();
         Thread t = new Thread(game);
         t.start();
